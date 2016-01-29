@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.getiton.android.app.core.view.WifiInfoView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/wifi_info"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.getiton.android.app.core.CoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="Pretty fly for a wifi"
+            android:textColor="#6D6D6D"
+            android:textSize="18sp"
+            app:typeface_file_name="@string/font_roboto_regular"/>
+
+        <ImageView
+            android:id="@+id/img_state"
+            tools:src="@drawable/ic_wifi_supported"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.getiton.android.app.ui.views.text.LgioTextView
+        android:id="@+id/txt_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="WPA"
+        android:textColor="#6D6D6D"
+        android:textSize="14sp"
+        app:typeface_file_name="@string/font_roboto_regular"/>
+</com.getiton.android.app.core.view.WifiInfoView>

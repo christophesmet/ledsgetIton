@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_back_selector"
+        app:navigationIcon="@drawable/ic_back_selector">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.getiton.android.app.ui.views.text.LgioEditText
+                android:id="@+id/txt_title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:visibility="gone"/>
+
+            <com.getiton.android.app.ui.views.text.LgioTextView
+                android:id="@+id/txt_title"
+                style="@style/ToolBarTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_title_unknown"
+                />
+        </FrameLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="138dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="18dp"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.getiton.android.app.rgb.ColorPickerView
+                    android:id="@+id/colorpicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:radiusOffset="24dp"
+                    app:thumbDrawable="@drawable/img_wheel_handle"
+                    app:wheelDrawable="@drawable/img_wheel"
+                    >
+                </com.getiton.android.app.rgb.ColorPickerView>
+
+                <ImageView
+                    android:id="@+id/btn_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_power"/>
+            </FrameLayout>
+
+            <SeekBar
+                android:id="@+id/valuebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="100"/>
+        </LinearLayout>
+
+        <com.getiton.android.app.ui.shadows.viewgroups.ShadowFrameLayout
+            android:id="@+id/frm_dragable"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_gravity="bottom"
+            android:elevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/lin_colors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#181E20"
+                android:orientation="vertical">
+
+                <com.getiton.android.app.ui.views.text.LgioTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/detail_color_title"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    app:typeface_file_name="@string/font_roboto_medium"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/grd_colors"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbarStyle="outsideOverlay">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </com.getiton.android.app.ui.shadows.viewgroups.ShadowFrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

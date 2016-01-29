@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarStyle"
+        android:navigationIcon="@drawable/ic_back_selector"
+        app:navigationIcon="@drawable/ic_back_selector"
+        >
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            style="@style/ToolBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_setup_info_title"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="28dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="28dp">
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_setup_info_description"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:typeface_file_name="@string/font_roboto_regular"/>
+
+        <include
+            layout="@layout/wifiscan_info_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"/>
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tutorial_setup_info_pass"
+            android:textColor="#6D6D6D"
+            android:textSize="18sp"
+            app:typeface_file_name="@string/font_roboto_regular"/>
+
+        <EditText
+            android:id="@+id/txt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/tutorial_setup_info_pass_placeholder"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:textColor="#6D6D6D"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/lin_check_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ck_show_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.getiton.android.app.ui.views.text.LgioTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:singleLine="true"
+                android:text="Show password"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:typeface_file_name="@string/font_roboto_regular"/>
+        </LinearLayout>
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tutorial_setup_info_name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:typeface_file_name="@string/font_roboto_regular"/>
+
+        <EditText
+            android:id="@+id/txt_custom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:hint="@string/tutorial_setup_info_name_placeholder"
+            android:imeOptions="actionGo"
+            android:inputType="textCapWords"
+            android:textColor="#6D6D6D"
+            android:textSize="16sp"/>
+
+        <com.getiton.android.app.ui.views.text.LgioTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tutorial_setup_info_name_example"
+            android:textColor="#6D6D6D"
+            android:textSize="14sp"
+            app:typeface_file_name="@string/font_roboto_regular"/>
+
+        <Button
+            android:id="@+id/btn_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="@string/tutorial_setup_info_btn_setup"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.christophesmet.ledsgetiton"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:name="com.getiton.android.app.core.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.getiton.android.app.rgb.RgbV1Activity"
+            android:configChanges="screenSize|orientation|screenLayout"
+            android:parentActivityName="com.getiton.android.app.overview.OverviewActivity">
+
+        </activity>
+        <activity
+            android:name="com.getiton.android.app.overview.OverviewActivity"
+            android:configChanges="screenSize|orientation|screenLayout"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.getiton.android.app.tutorial.TutorialSetupInfoActivity"
+            android:configChanges="screenSize|orientation|screenLayout"
+            android:parentActivityName="com.getiton.android.app.overview.OverviewActivity"
+            />
+        <activity
+            android:name="com.getiton.android.app.tutorial.TutorialRegisterFlowActivity"
+            android:configChanges="screenSize|orientation|screenLayout"
+            android:parentActivityName="com.getiton.android.app.tutorial.TutorialSetupInfoActivity"
+            />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cd19249af273c2bfbbb88e2381fb0c40853a6e1d"/>
+    </application>
+
+</manifest>

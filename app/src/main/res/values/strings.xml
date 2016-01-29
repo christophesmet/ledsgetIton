@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Leds Get It On</string>
+    <!--Registration -->
+    <string name="registration_title">Registrate module</string>
+
+    <string name="general_error_title">ERROR</string>
+    <string name="general_ok_got_it">Ok, I got it</string>
+    <string name="general_retry_action">RETRY</string>
+    <string name="general_security_wifi_open">Open, not secure</string>
+    <string name="general_security_wifi_wep">Not really secure with WEP</string>
+    <string name="general_security_wifi_wpa">Secured with WPA</string>
+    <string name="general_security_wifi_wpa2">Secured with WPA2</string>
+    <string name="general_securiry_wifi_not_24ghz">Wi-Fi is not a 2.4 Ghz network.</string>
+
+    <!--Tutorial -->
+    <string name="tutorial_scan_timeout_title">No modules found</string>
+    <string name="tutorial_scan_timeout_description">Is your module plugged in ?</string>
+    <string name="tutorial_scan_timeout_retry">Retry</string>
+    <string name="tutorial_wifi_loading_description">Searching for the sweet spots</string>
+    <string name="tutorial_setup_info_title">Set up info</string>
+    <string name="tutorial_setup_info_description">Connect this device to your Wi-Fi</string>
+    <string name="tutorial_setup_info_pass">Password</string>
+    <string name="tutorial_setup_info_pass_placeholder">(password)</string>
+    <string name="tutorial_setup_info_name">Name</string>
+    <string name="tutorial_setup_info_name_placeholder">(name)</string>
+    <string name="tutorial_setup_info_name_example">Example: \"Living room\"</string>
+
+    <string name="tutorial_setup_info_unable_to_get_current_wifi_info">We can\'t get it on with your Wi-Fi. Is your wifi on ? And connected to your home network ?</string>
+    <string name="tutorial_setup_info_error_pass_required">Fill in the password of your Wi-Fi network</string>
+    <string name="tutorial_setup_info_btn_setup">SET NETWORK</string>
+
+    <string name="tutorial_register_flow_title">set up {{name}}</string>
+    <!--states -->
+    <string name="tutorial_register_state_starting">Registration started</string>
+    <string name="tutorial_register_state_connecting">Connecting to device</string>
+    <string name="tutorial_register_state_connected">Connected to device</string>
+    <string name="tutorial_register_state_getting_device_info">Getting device info</string>
+    <string name="tutorial_register_state_received_device_info">Received devce info</string>
+    <string name="tutorial_register_state_configuring">Sending instruction how to get it on</string>
+    <string name="tutorial_register_state_configured">Instructions received</string>
+    <string name="tutorial_register_state_cleanup">Connecting back to network</string>
+    <string name="tutorial_register_state_lan_scan">Searching for new module</string>
+    <string name="tutorial_register_state_lan_module_found">Module found</string>
+    <string name="tutorial_register_state_done">We are done</string>
+    <string name="tutorial_register_state_error">Something went wrong, please go back to the overview</string>
+
+    <string name="tutorial_register_scan_done_non_found_body">The registration is complete but the module wasn\'t found.\nPlease go back to the overview.</string>
+
+    <!--rgb detail -->
+    <string name="detail_module_not_found_title">Not found</string>
+    <string name="detail_module_not_found">The module was not found.\nAre you connecting to your wifi and have you installed the module ?</string>
+    <string name="detail_color_title">Colors</string>
+    <string name="detail_title_unknown">Unknown</string>
+    <!-- Overview -->
+    <string name="overview_title">Overview</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="module_needs_configuration">Needs configuration</string>
+</resources>

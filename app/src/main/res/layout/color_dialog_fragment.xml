@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frm_color"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:padding="13dp"
+        tools:background="#06BCFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_close_selector"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_delete_selector"/>
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_save_selector"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#FAFAFA"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.getiton.android.app.ui.views.text.LgioTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_r"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:max="255"
+                />
+
+            <com.getiton.android.app.ui.views.text.LgioEditText
+                android:id="@+id/txt_r_value"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.getiton.android.app.ui.views.text.LgioTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_g"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:max="255"
+                />
+
+            <com.getiton.android.app.ui.views.text.LgioEditText
+                android:id="@+id/txt_g_value"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.getiton.android.app.ui.views.text.LgioTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:max="255"
+                />
+
+            <com.getiton.android.app.ui.views.text.LgioEditText
+                android:id="@+id/txt_b_value"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:textColor="#303C40"
+                android:textSize="16sp"
+                app:typeface_file_name="@string/font_roboto_regular"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
